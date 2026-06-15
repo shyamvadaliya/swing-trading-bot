@@ -14,7 +14,7 @@ df = yf.download(
     auto_adjust=True
 )
 
-close_price = round(float(df["Close"].iloc[-1]), 2)
+close_price = round(float(df["Close"].values[-1]), 2)
 
 message = f"""
 ✅ YFinance Working
