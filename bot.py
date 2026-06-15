@@ -1,8 +1,9 @@
 import requests
 import yfinance as yf
+import os
 
-BOT_TOKEN ="8809597527:AAHVVTVw6fTBWvjF4qmVpFKtAzyqukXJ56A"
-CHAT_ID = "799554389"
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 stocks = [
     "RELIANCE.NS",
